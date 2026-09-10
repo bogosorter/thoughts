@@ -59,6 +59,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 1em;
+        width: 100%;
 
         button {
             align-self: flex-start;
@@ -81,11 +82,10 @@ main {
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
             border-radius: var(--border-radius);
 
             &.ratio-16-9 {
-                width: 100%;
                 aspect-ratio: 16/9;
                 object-fit: cover;
             }
@@ -137,11 +137,6 @@ main {
 
         .caption {
             padding: 0 1em;
-        }
-
-        pre {
-            padding-left: 4em;
-            overflow-y: scroll;
         }
     }
 }
