@@ -21,9 +21,7 @@ body {
 }
 
 nav {
-    position: absolute;
     padding: 1em;
-    z-index: 1;
 
     a {
         font-size: 1.2em;
@@ -32,51 +30,27 @@ nav {
     }
 }
 
-#cover {
-    position: relative;
+main {
+    max-width: 47em;
+    padding: 2em;
+    margin: 20vh auto 30vh auto;
 
-    height: 100vh;
-    width: 100%;
-    padding: 20em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cover {
+    margin-bottom: 25vh;
 
     h1 {
-        font-size: 4em;
         font-weight: normal;
-        margin-bottom: 0;
-    }
-    
-    img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        max-width: 20em;
-
-        /* reflect horizontally */
-        transform: scaleX(-1);
+        font-size: 2.5em;
     }
 }
 
-@media (max-width: 768px) {
-    #cover {
-        padding: 10em 2em;
-
-        h1 {
-            font-size: 2em;
-        }
-
-        img {
-            max-width: 15em;
-        }
-    }
-}
 
 #posts {
-    max-width: 47em;
-    padding: 15em 2em;
-    margin-left: auto;
-    margin-right: auto;
-    
     display: flex;
     flex-direction: column;
     gap: 10em;
